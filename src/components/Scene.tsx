@@ -4,22 +4,22 @@ import { useTexture } from "@react-three/drei"
 import * as THREE from "three"
 
 const images = [
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%281%29-KqS753y9z7eEkZKIh0rzbgD3jJjMCl.jpg",
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%284%29-GDfu68kc6bpcQiAUe7C5xMIJmnXCDm.jpg",
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%2810%29-OrLucPOAahIph0YnVgVuGUnsPTaNx8.jpg",
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%282%29-rd1lKJeWsJYrLCZ17qTQLNZkRimW75.jpg",
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%288%29-JyAOFn1dBSpZSlD8nANRaq4hk568jg.jpg",
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%283%29-6VLx3zL2hBDFGSxS4PT00r5a1Mvzgi.jpg",
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%2815%29-WfPVVoZCDiLzMEXhHsDMlLYpZnZowN.jpg",
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%2818%29-Btt8C4BM3F1RXnCwD8WyrscyQQeKWR.jpg",
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%2813%29-X6FjDEWxC3gOkMLPxS2UJxksXtcq6j.jpg",
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%2817%29-y3fTE1IgoWebjYSuTTnt0zsgeyEt6I.jpg",
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%2823%29-A5m4nKEHgoh0oNyb6jLQaU0Ye50cvA.jpg",
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%2811%29-Y6InBk3wTZFovUr6jnnZWaPQgWfl6k.jpg",
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%2814%29-SCCwpaEfvTRrvqlTWqp1MFs5MIBpuV.jpg",
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%2812%29-7WvqhUk9iih5UFMt305jeX9EfTDRGd.jpg",
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%2819%29-sPRqu4ZKsZXybhLs7ecdEYAzTXy6t5.jpg",
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motion%20Blur%20Photography%20%2820%29-AYYzJPYYfPbM6vSYJGhyWBLNTjdPIx.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/f91527da-6a6f-4b8b-871d-f21e1ab3f0e7.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/f31f42e6-50a5-4ba7-9018-ad26f7116a26.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/2e1596f4-1aed-4118-917c-0f6696a53c31.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/f9c817fa-b087-490d-b203-7ad4889b9cbb.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/b8f0fda4-9390-437c-a25f-2b27ed8a0e08.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/9a1e7fcb-8f8e-4f14-988e-4092973b7577.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/28a075a9-9394-4fb9-a825-e0befcfe58f0.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/ebd15842-3a94-440a-b3ba-663a1a21690d.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/426e92eb-abed-4767-ba49-850c9287a126.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/b577b086-d855-4f5d-b090-1dcf28657deb.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/d691f63f-2d0c-4502-ad29-689f68f9109c.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/b60c8fc2-26bf-4fbf-b683-96c47625eda7.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/be941194-1087-418d-9801-f7dc003e158a.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/ed448c1f-a23d-4dd5-bb2b-df52431f4582.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/29356b82-a03f-400c-8787-bee5908d388f.jpg",
+  "https://cdn.poehali.dev/projects/76ef6d1b-c102-4d88-af16-9c53668d1162/files/ad8cb3c2-6535-4f44-89ff-ef4cea3d8cb4.jpg",
 ]
 
 const imagePositions = [

@@ -27,10 +27,20 @@ export default function LoadingScreen() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="font-serif text-4xl mb-4"
+          className="font-serif text-4xl mb-2"
+          style={{ color: "hsl(340, 60%, 82%)" }}
         >
-          Загрузка
+          Путь к себе
         </motion.div>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="text-xs tracking-widest mb-4"
+          style={{ color: "hsl(340, 20%, 55%)" }}
+        >
+          ОСОЗНАННОЕ СНИЖЕНИЕ ВЕСА
+        </motion.p>
         <motion.div
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}

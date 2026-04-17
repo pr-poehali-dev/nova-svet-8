@@ -4,44 +4,44 @@
 
 @layer base {
   :root {
-    --background: 0 0% 5%;
-    --foreground: 0 0% 98%;
+    --background: 340 15% 7%;
+    --foreground: 30 20% 95%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 340 12% 10%;
+    --card-foreground: 30 20% 95%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 340 12% 10%;
+    --popover-foreground: 30 20% 95%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 5%;
+    --primary: 340 60% 78%;
+    --primary-foreground: 340 15% 7%;
 
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 340 10% 16%;
+    --secondary-foreground: 30 20% 95%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 340 10% 16%;
+    --muted-foreground: 340 10% 60%;
 
-    --accent: 0 0% 25%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 340 35% 28%;
+    --accent-foreground: 30 20% 95%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 0 0% 80%;
+    --border: 340 15% 22%;
+    --input: 340 15% 22%;
+    --ring: 340 60% 78%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 8%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 0 0% 98%;
-    --sidebar-primary-foreground: 0 0% 5%;
-    --sidebar-accent: 0 0% 15%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 0 0% 20%;
-    --sidebar-ring: 0 0% 80%;
+    --sidebar-background: 340 12% 10%;
+    --sidebar-foreground: 30 20% 95%;
+    --sidebar-primary: 340 60% 78%;
+    --sidebar-primary-foreground: 340 15% 7%;
+    --sidebar-accent: 340 10% 16%;
+    --sidebar-accent-foreground: 30 20% 95%;
+    --sidebar-border: 340 15% 22%;
+    --sidebar-ring: 340 60% 78%;
   }
 }
 
@@ -53,7 +53,9 @@
     box-sizing: border-box;
   }
 
-  html, body, #root {
+  html,
+  body,
+  #root {
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -61,10 +63,15 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Montserrat', system-ui, sans-serif;
+    font-family: "Montserrat", system-ui, sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'PT Serif', Georgia, serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "PT Serif", Georgia, serif;
   }
 }
